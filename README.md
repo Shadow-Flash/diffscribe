@@ -27,6 +27,11 @@ Diffscribe is a Claude skill that reads your current branch's actual work git di
 
 ### 1. Install the Skill
 
+```
+npx skills add Shadow-Flash/diffscribe
+```
+**OR**
+
 Download [`diffscribe.skill`](./diffscribe.skill) and install it into Claude:
 
 - In **Claude Code**: Drop the `.skill` file into your project's `.claude/skills/` directory
@@ -62,7 +67,7 @@ Diffscribe outputs a ready-to-paste PR description. Optionally, it can raise the
 <details>
 <summary>View sample output →</summary>
 
-See [`examples/sample_output.md`](./examples/sample_output.md) for a full example of a Diffscribe-generated PR description.
+See [`sample_output.md`](./sample_output.md) for a full example of a Diffscribe-generated PR description.
 
 </details>
 
@@ -104,9 +109,8 @@ diffscribe/
 │   ├── SKILL.md                       ← Skill source & instructions
 │   └── references/
 │       └── platform-notes.md          ← Platform-specific CLI tips
-└── examples/
-    ├── sample_pr_template.md          ← Example PR template
-    └── sample_output.md               ← Example Diffscribe output
+├── sample_pr_template.md          ← Example PR template
+└── sample_output.md               ← Example Diffscribe output
 ```
 
 ---
